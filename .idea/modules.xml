@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jete.iml" filepath="$PROJECT_DIR$/jete.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jete-common/jete-common.iml" filepath="$PROJECT_DIR$/jete-common/jete-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jete-process/jete-process.iml" filepath="$PROJECT_DIR$/jete-process/jete-process.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jete-ui/jete-ui.iml" filepath="$PROJECT_DIR$/jete-ui/jete-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jete-web/jete-web.iml" filepath="$PROJECT_DIR$/jete-web/jete-web.iml" />
+    </modules>
+  </component>
+</project>

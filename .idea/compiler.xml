@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jete-process" />
+        <module name="jete-web" />
+        <module name="jete-ui" />
+        <module name="jete-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jete" target="1.8" />
+      <module name="jete-common" target="1.8" />
+      <module name="jete-process" target="1.8" />
+      <module name="jete-ui" target="1.8" />
+      <module name="jete-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jete-common" options="-parameters" />
+      <module name="jete-process" options="-parameters" />
+      <module name="jete-ui" options="-parameters" />
+      <module name="jete-web" options="-parameters" />
+    </option>
+  </component>
+</project>
