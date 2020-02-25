@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tag, message } from 'antd';
+import { Tag, com.github.bacazy.jete.common.rpc.message } from 'antd';
 import { connect } from 'dva';
 import { formatMessage } from 'umi-plugin-react/locale';
 import groupBy from 'lodash/groupBy';
@@ -42,7 +42,7 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
 
   handleNoticeClear = (title: string, key: string) => {
     const { dispatch } = this.props;
-    message.success(`${formatMessage({ id: 'component.noticeIcon.cleared' })} ${title}`);
+    com.github.bacazy.jete.common.rpc.message.success(`${formatMessage({ id: 'component.noticeIcon.cleared' })} ${title}`);
     if (dispatch) {
       dispatch({
         type: 'global/clearNotices',
@@ -113,7 +113,7 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
         viewMoreText={formatMessage({ id: 'component.noticeIcon.view-more' })}
         onClear={this.handleNoticeClear}
         onPopupVisibleChange={onNoticeVisibleChange}
-        onViewMore={() => message.info('Click on view more')}
+        onViewMore={() => com.github.bacazy.jete.common.rpc.message.info('Click on view more')}
         clearClose
       >
         <NoticeIcon.Tab
@@ -125,11 +125,11 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
           showViewMore
         />
         <NoticeIcon.Tab
-          tabKey="message"
-          count={unreadMsg.message}
-          list={noticeData.message}
-          title={formatMessage({ id: 'component.globalHeader.message' })}
-          emptyText={formatMessage({ id: 'component.globalHeader.message.empty' })}
+          tabKey="com.github.bacazy.jete.common.rpc.message"
+          count={unreadMsg.com.github.bacazy.jete.common.rpc.message}
+          list={noticeData.com.github.bacazy.jete.common.rpc.message}
+          title={formatMessage({ id: 'component.globalHeader.com.github.bacazy.jete.common.rpc.message' })}
+          emptyText={formatMessage({ id: 'component.globalHeader.com.github.bacazy.jete.common.rpc.message.empty' })}
           showViewMore
         />
         <NoticeIcon.Tab

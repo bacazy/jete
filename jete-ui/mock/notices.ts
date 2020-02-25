@@ -44,7 +44,7 @@ const getNotices = (req: Request, res: Response) => {
       title: '曲丽丽 评论了你',
       description: '描述信息描述信息描述信息',
       datetime: '2017-08-07',
-      type: 'message',
+      type: 'com.github.bacazy.jete.common.rpc.message',
       clickClose: true,
     },
     {
@@ -53,7 +53,7 @@ const getNotices = (req: Request, res: Response) => {
       title: '朱偏右 回复了你',
       description: '这种模板用于提醒谁与你发生了互动，左侧放『谁』的头像',
       datetime: '2017-08-07',
-      type: 'message',
+      type: 'com.github.bacazy.jete.common.rpc.message',
       clickClose: true,
     },
     {
@@ -62,7 +62,7 @@ const getNotices = (req: Request, res: Response) => {
       title: '标题',
       description: '这种模板用于提醒谁与你发生了互动，左侧放『谁』的头像',
       datetime: '2017-08-07',
-      type: 'message',
+      type: 'com.github.bacazy.jete.common.rpc.message',
       clickClose: true,
     },
     {

@@ -1,7 +1,7 @@
 import { DownOutlined, PlusOutlined } from '@ant-design/icons';
 import { Form } from '@ant-design/compatible';
 import '@ant-design/compatible/assets/index.css';
-import { Button, Divider, Dropdown, Menu, message } from 'antd';
+import { Button, Divider, Dropdown, Menu, com.github.bacazy.jete.common.rpc.message } from 'antd';
 import React, { useState, useRef } from 'react';
 import { FormComponentProps } from '@ant-design/compatible/es/form';
 import { PageHeaderWrapper } from '@ant-design/pro-layout';
@@ -18,17 +18,17 @@ interface TableListProps extends FormComponentProps {}
  * @param fields
  */
 const handleAdd = async (fields: FormValueType) => {
-  const hide = message.loading('正在添加');
+  const hide = com.github.bacazy.jete.common.rpc.message.loading('正在添加');
   try {
     await addRule({
       desc: fields.desc,
     });
     hide();
-    message.success('添加成功');
+    com.github.bacazy.jete.common.rpc.message.success('添加成功');
     return true;
   } catch (error) {
     hide();
-    message.error('添加失败请重试！');
+    com.github.bacazy.jete.common.rpc.message.error('添加失败请重试！');
     return false;
   }
 };
@@ -38,7 +38,7 @@ const handleAdd = async (fields: FormValueType) => {
  * @param fields
  */
 const handleUpdate = async (fields: FormValueType) => {
-  const hide = message.loading('正在配置');
+  const hide = com.github.bacazy.jete.common.rpc.message.loading('正在配置');
   try {
     await updateRule({
       name: fields.name,
@@ -47,11 +47,11 @@ const handleUpdate = async (fields: FormValueType) => {
     });
     hide();
 
-    message.success('配置成功');
+    com.github.bacazy.jete.common.rpc.message.success('配置成功');
     return true;
   } catch (error) {
     hide();
-    message.error('配置失败请重试！');
+    com.github.bacazy.jete.common.rpc.message.error('配置失败请重试！');
     return false;
   }
 };
@@ -61,18 +61,18 @@ const handleUpdate = async (fields: FormValueType) => {
  * @param selectedRows
  */
 const handleRemove = async (selectedRows: TableListItem[]) => {
-  const hide = message.loading('正在删除');
+  const hide = com.github.bacazy.jete.common.rpc.message.loading('正在删除');
   if (!selectedRows) return true;
   try {
     await removeRule({
       key: selectedRows.map(row => row.key),
     });
     hide();
-    message.success('删除成功，即将刷新');
+    com.github.bacazy.jete.common.rpc.message.success('删除成功，即将刷新');
     return true;
   } catch (error) {
     hide();
-    message.error('删除失败，请重试');
+    com.github.bacazy.jete.common.rpc.message.error('删除失败，请重试');
     return false;
   }
 };

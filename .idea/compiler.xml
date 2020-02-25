@@ -2,20 +2,27 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="jete-process" />
+        <module name="jete-process-common" />
+        <module name="jete-process-engine" />
+        <module name="jete-process-server" />
         <module name="jete-web" />
-        <module name="jete-ui" />
         <module name="jete-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="jete" target="1.8" />
       <module name="jete-common" target="1.8" />
+      <module name="jete-doc" target="1.8" />
       <module name="jete-process" target="1.8" />
+      <module name="jete-process-common" target="1.8" />
+      <module name="jete-process-engine" target="1.8" />
+      <module name="jete-process-loader" target="9" />
+      <module name="jete-process-server" target="1.8" />
       <module name="jete-ui" target="1.8" />
       <module name="jete-web" target="1.8" />
     </bytecodeTargetLevel>
@@ -23,8 +30,13 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="jete-common" options="-parameters" />
+      <module name="jete-doc" options="-parameters" />
       <module name="jete-process" options="-parameters" />
-      <module name="jete-ui" options="-parameters" />
+      <module name="jete-process-common" options="-parameters" />
+      <module name="jete-process-engine" options="-parameters" />
+      <module name="jete-process-loader" options="-parameters" />
+      <module name="jete-process-server" options="-parameters" />
+      <module name="jete-ui" options="" />
       <module name="jete-web" options="-parameters" />
     </option>
   </component>

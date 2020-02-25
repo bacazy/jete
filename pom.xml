@@ -20,23 +20,54 @@
         <module>jete-process</module>
         <module>jete-web</module>
         <module>jete-ui</module>
+        <module>jete-doc</module>
     </modules>
 
     <properties>
-        <akka.version>2.6.0</akka.version>
+        <akka.version>2.6.3</akka.version>
+        <akka.grpc.version>0.7.3</akka.grpc.version>
+
+        <jete.version>1.0</jete.version>
     </properties>
 
     <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-actor-typed_2.13</artifactId>
+                <version>${akka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.lightbend.akka.grpc</groupId>
+                <artifactId>akka-grpc-runtime_2.13</artifactId>
+                <version>${akka.grpc.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.typesafe.akka</groupId>
+                <artifactId>akka-cluster-typed_2.13</artifactId>
+                <version>${akka.version}</version>
+            </dependency>
 
+            <dependency>
+                <groupId>com.github.bacazy.jete</groupId>
+                <artifactId>jete-common</artifactId>
+                <version>${jete.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bacazy.jete</groupId>
+                <artifactId>jete-process-common</artifactId>
+                <version>${jete.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.bacazy.jete</groupId>
+                <artifactId>jete-process-engine</artifactId>
+                <version>${jete.version}</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.12</version>
-            <scope>provided</scope>
-        </dependency>
+
     </dependencies>
 
     <build>

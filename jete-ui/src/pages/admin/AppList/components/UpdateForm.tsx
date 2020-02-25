@@ -136,7 +136,7 @@ class UpdateForm extends Component<UpdateFormProps, UpdateFormState> {
       return [
         <FormItem key="time" {...this.formLayout} label="开始时间">
           {form.getFieldDecorator('time', {
-            rules: [{ required: true, message: '请选择开始时间！' }],
+            rules: [{ required: true, com.github.bacazy.jete.common.rpc.message: '请选择开始时间！' }],
           })(
             <DatePicker
               style={{ width: '100%' }}
@@ -161,13 +161,13 @@ class UpdateForm extends Component<UpdateFormProps, UpdateFormState> {
     return [
       <FormItem key="name" {...this.formLayout} label="规则名称">
         {form.getFieldDecorator('name', {
-          rules: [{ required: true, message: '请输入规则名称！' }],
+          rules: [{ required: true, com.github.bacazy.jete.common.rpc.message: '请输入规则名称！' }],
           initialValue: formVals.name,
         })(<Input placeholder="请输入" />)}
       </FormItem>,
       <FormItem key="desc" {...this.formLayout} label="规则描述">
         {form.getFieldDecorator('desc', {
-          rules: [{ required: true, message: '请输入至少五个字符的规则描述！', min: 5 }],
+          rules: [{ required: true, com.github.bacazy.jete.common.rpc.message: '请输入至少五个字符的规则描述！', min: 5 }],
           initialValue: formVals.desc,
         })(<TextArea rows={4} placeholder="请输入至少五个字符" />)}
       </FormItem>,

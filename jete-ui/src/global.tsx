@@ -1,4 +1,4 @@
-import { Button, message, notification } from 'antd';
+import { Button, com.github.bacazy.jete.common.rpc.message, notification } from 'antd';
 
 import React from 'react';
 import { formatMessage } from 'umi-plugin-react/locale';
@@ -9,7 +9,7 @@ const { pwa } = defaultSettings;
 if (pwa) {
   // Notify user if offline now
   window.addEventListener('sw.offline', () => {
-    message.warning(formatMessage({ id: 'app.pwa.offline' }));
+    com.github.bacazy.jete.common.rpc.message.warning(formatMessage({ id: 'app.pwa.offline' }));
   });
 
   // Pop up a prompt on the page asking the user if they want to use the latest version
@@ -51,7 +51,7 @@ if (pwa) {
       </Button>
     );
     notification.open({
-      message: formatMessage({ id: 'app.pwa.serviceworker.updated' }),
+      com.github.bacazy.jete.common.rpc.message: formatMessage({ id: 'app.pwa.serviceworker.updated' }),
       description: formatMessage({ id: 'app.pwa.serviceworker.updated.hint' }),
       btn,
       key,

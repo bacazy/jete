@@ -85,7 +85,7 @@ class Login extends Component<LoginProps, LoginState> {
     });
 
   renderMessage = (content: string) => (
-    <Alert style={{ marginBottom: 24 }} message={content} type="error" showIcon />
+    <Alert style={{ marginBottom: 24 }} com.github.bacazy.jete.common.rpc.message={content} type="error" showIcon />
   );
 
   render() {
@@ -107,7 +107,7 @@ class Login extends Component<LoginProps, LoginState> {
               loginType === 'account' &&
               !submitting &&
               this.renderMessage(
-                formatMessage({ id: 'user-login.login.message-invalid-credentials' }),
+                formatMessage({ id: 'user-login.login.com.github.bacazy.jete.common.rpc.message-invalid-credentials' }),
               )}
             <UserName
               name="userName"
@@ -115,7 +115,7 @@ class Login extends Component<LoginProps, LoginState> {
               rules={[
                 {
                   required: true,
-                  message: formatMessage({ id: 'user-login.userName.required' }),
+                  com.github.bacazy.jete.common.rpc.message: formatMessage({ id: 'user-login.userName.required' }),
                 },
               ]}
             />
@@ -125,7 +125,7 @@ class Login extends Component<LoginProps, LoginState> {
               rules={[
                 {
                   required: true,
-                  message: formatMessage({ id: 'user-login.password.required' }),
+                  com.github.bacazy.jete.common.rpc.message: formatMessage({ id: 'user-login.password.required' }),
                 },
               ]}
               onPressEnter={e => {
@@ -141,7 +141,7 @@ class Login extends Component<LoginProps, LoginState> {
               loginType === 'mobile' &&
               !submitting &&
               this.renderMessage(
-                formatMessage({ id: 'user-login.login.message-invalid-verification-code' }),
+                formatMessage({ id: 'user-login.login.com.github.bacazy.jete.common.rpc.message-invalid-verification-code' }),
               )}
             <Mobile
               name="mobile"
@@ -149,11 +149,11 @@ class Login extends Component<LoginProps, LoginState> {
               rules={[
                 {
                   required: true,
-                  message: formatMessage({ id: 'user-login.phone-number.required' }),
+                  com.github.bacazy.jete.common.rpc.message: formatMessage({ id: 'user-login.phone-number.required' }),
                 },
                 {
                   pattern: /^1\d{10}$/,
-                  message: formatMessage({ id: 'user-login.phone-number.wrong-format' }),
+                  com.github.bacazy.jete.common.rpc.message: formatMessage({ id: 'user-login.phone-number.wrong-format' }),
                 },
               ]}
             />
@@ -167,7 +167,7 @@ class Login extends Component<LoginProps, LoginState> {
               rules={[
                 {
                   required: true,
-                  message: formatMessage({ id: 'user-login.verification-code.required' }),
+                  com.github.bacazy.jete.common.rpc.message: formatMessage({ id: 'user-login.verification-code.required' }),
                 },
               ]}
             />

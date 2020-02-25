@@ -17,7 +17,7 @@ export default (): React.ReactNode => (
   <PageHeaderWrapper>
     <Card>
       <Alert
-        message="umi ui 现已发布，点击右下角 umi 图标即可使用"
+        com.github.bacazy.jete.common.rpc.message="umi ui 现已发布，点击右下角 umi 图标即可使用"
         type="success"
         showIcon
         banner

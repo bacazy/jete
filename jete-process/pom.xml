@@ -13,8 +13,11 @@
     <groupId>com.github.bacazy.jete</groupId>
     <artifactId>jete-process</artifactId>
     <version>1.0</version>
+    <packaging>pom</packaging>
 
     <modules>
-        <module></module>
+        <module>jete-process-common</module>
+        <module>jete-process-engine</module>
+        <module>jete-process-server</module>
     </modules>
 </project>

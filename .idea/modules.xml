@@ -4,7 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/jete.iml" filepath="$PROJECT_DIR$/jete.iml" />
       <module fileurl="file://$PROJECT_DIR$/jete-common/jete-common.iml" filepath="$PROJECT_DIR$/jete-common/jete-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jete-doc/jete-doc.iml" filepath="$PROJECT_DIR$/jete-doc/jete-doc.iml" />
       <module fileurl="file://$PROJECT_DIR$/jete-process/jete-process.iml" filepath="$PROJECT_DIR$/jete-process/jete-process.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jete-process/jete-process-common/jete-process-common.iml" filepath="$PROJECT_DIR$/jete-process/jete-process-common/jete-process-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jete-process/jete-process-engine/jete-process-engine.iml" filepath="$PROJECT_DIR$/jete-process/jete-process-engine/jete-process-engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jete-process/jete-process-server/jete-process-server.iml" filepath="$PROJECT_DIR$/jete-process/jete-process-server/jete-process-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/jete-ui/jete-ui.iml" filepath="$PROJECT_DIR$/jete-ui/jete-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/jete-web/jete-web.iml" filepath="$PROJECT_DIR$/jete-web/jete-web.iml" />
     </modules>

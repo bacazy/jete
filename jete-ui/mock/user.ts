@@ -109,7 +109,7 @@ export default {
       timestamp: 1513932555104,
       status: 500,
       error: 'error',
-      message: 'error',
+      com.github.bacazy.jete.common.rpc.message: 'error',
       path: '/base/category/list',
     });
   },
@@ -118,7 +118,7 @@ export default {
       timestamp: 1513932643431,
       status: 404,
       error: 'Not Found',
-      message: 'No message available',
+      com.github.bacazy.jete.common.rpc.message: 'No com.github.bacazy.jete.common.rpc.message available',
       path: '/base/category/list/2121212',
     });
   },
@@ -127,7 +127,7 @@ export default {
       timestamp: 1513932555104,
       status: 403,
       error: 'Unauthorized',
-      message: 'Unauthorized',
+      com.github.bacazy.jete.common.rpc.message: 'Unauthorized',
       path: '/base/category/list',
     });
   },
@@ -136,7 +136,7 @@ export default {
       timestamp: 1513932555104,
       status: 401,
       error: 'Unauthorized',
-      message: 'Unauthorized',
+      com.github.bacazy.jete.common.rpc.message: 'Unauthorized',
       path: '/base/category/list',
     });
   },
